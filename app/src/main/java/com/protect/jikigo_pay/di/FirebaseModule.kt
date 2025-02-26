@@ -1,4 +1,4 @@
-package com
+package com.protect.jikigo_pay.di
 
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.FirebaseFirestore

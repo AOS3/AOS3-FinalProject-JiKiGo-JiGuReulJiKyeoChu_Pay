@@ -1,4 +1,4 @@
-package com.protect.jikigo_pay
+package com.protect.jikigo_pay.model
 
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -13,6 +13,7 @@ data class UserQR(
     val userQrError: String = "",
     val paymentDate: String = getCurrentFormattedDate(), // 현재 날짜를 String으로 저장
     val paymentPrice: Int = 0,
+    val payName: String = ""
 )
 
 // 현재 날짜를 "yyyy/MM/dd HH:mm:ss" 형식으로 반환하는 함수

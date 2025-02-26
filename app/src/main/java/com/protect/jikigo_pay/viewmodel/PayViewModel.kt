@@ -1,12 +1,13 @@
-package com.protect.jikigo_pay.pay
+package com.protect.jikigo_pay.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.protect.Pay
-import com.protect.jikigo_pay.UserQR
+import com.protect.jikigo_pay.model.Pay
+import com.protect.jikigo_pay.model.UserQR
+import com.protect.jikigo_pay.pay.PayAppRepo
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

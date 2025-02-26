@@ -1,4 +1,4 @@
-package com.protect.jikigo_pay
+package com.protect.jikigo_pay.util
 
 import android.icu.text.DecimalFormat
 import android.widget.TextView

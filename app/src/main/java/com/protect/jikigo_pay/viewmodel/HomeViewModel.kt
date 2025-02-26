@@ -1,10 +1,10 @@
-package com.protect.jikigo_pay.home
+package com.protect.jikigo_pay.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.protect.Pay
+import com.protect.jikigo_pay.model.Pay
 
 import com.protect.jikigo_pay.pay.PayAppRepo
 import dagger.hilt.android.lifecycle.HiltViewModel

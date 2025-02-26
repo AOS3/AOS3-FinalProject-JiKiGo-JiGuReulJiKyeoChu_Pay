@@ -1,4 +1,4 @@
-package com.protect
+package com.protect.jikigo_pay.model
 
 import android.os.Parcel
 import android.os.Parcelable
