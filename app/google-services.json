@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1004831057076",
+    "firebase_url": "https://jikigo-bbb70-default-rtdb.firebaseio.com",
+    "project_id": "jikigo-bbb70",
+    "storage_bucket": "jikigo-bbb70.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004831057076:android:1361dfd1b22fa3ddeba3e1",
+        "android_client_info": {
+          "package_name": "com.protect.jikigo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG6izmuPkRPrOskmmWXwFYBZTzMh2WGmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004831057076:android:bb5ba81f63ed4332eba3e1",
+        "android_client_info": {
+          "package_name": "com.protect.jikigo_pay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG6izmuPkRPrOskmmWXwFYBZTzMh2WGmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004831057076:android:0eef703873c705f5eba3e1",
+        "android_client_info": {
+          "package_name": "com.samsung.android.simplehealth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG6izmuPkRPrOskmmWXwFYBZTzMh2WGmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
