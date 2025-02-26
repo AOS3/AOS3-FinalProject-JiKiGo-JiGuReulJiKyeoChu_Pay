@@ -8,11 +8,12 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.protect.jikigo_pay.PayListener
 import com.protect.jikigo_pay.R
 import com.protect.jikigo_pay.databinding.ActivityHomeBinding
-import com.protect.Pay
+import com.protect.jikigo_pay.model.Pay
 import com.protect.jikigo_pay.pay.PayActivity
+import com.protect.jikigo_pay.util.PayListener
+import com.protect.jikigo_pay.viewmodel.HomeViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

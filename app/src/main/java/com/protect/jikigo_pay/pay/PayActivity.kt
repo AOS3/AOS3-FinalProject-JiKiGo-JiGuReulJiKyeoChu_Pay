@@ -13,10 +13,11 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.protect.Pay
+import com.protect.jikigo_pay.model.Pay
 import com.protect.jikigo_pay.R
-import com.protect.jikigo_pay.UserQR
+import com.protect.jikigo_pay.model.UserQR
 import com.protect.jikigo_pay.databinding.ActivityPayBinding
+import com.protect.jikigo_pay.viewmodel.PayViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import org.json.JSONException
 import org.json.JSONObject
@@ -100,12 +101,14 @@ class PayActivity : AppCompatActivity() {
     private fun getJson(json: String) {
         val jsonObject = JSONObject(json)
         val paymentDate: String = jsonObject.getString("paymentDate")
+        val payName: String = jsonObject.getString("payName")
         val paymentPrice: Int = jsonObject.getInt("paymentPrice")
         val userId: String = jsonObject.getString("userId")
         val userQR: String = jsonObject.getString("userQR")
         val userQrError: String = jsonObject.getString("userQrError")
         val userQrUse: Boolean = jsonObject.getBoolean("userQrUse")
 
+        Log.d("getJson", "payName: $payName")
         Log.d("getJson", "date: $paymentDate")
         Log.d("getJson", "price: $paymentPrice")
         Log.d("getJson", "userId: $userId")

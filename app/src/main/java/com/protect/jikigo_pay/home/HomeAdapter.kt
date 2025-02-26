@@ -3,10 +3,10 @@ package com.protect.jikigo_pay.home
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.protect.jikigo_pay.PayListener
-import com.protect.jikigo_pay.applyNumberFormat
+import com.protect.jikigo_pay.util.PayListener
+import com.protect.jikigo_pay.util.applyNumberFormat
 import com.protect.jikigo_pay.databinding.ItemPayItemBinding
-import com.protect.Pay
+import com.protect.jikigo_pay.model.Pay
 
 
 class HomeAdapter(
