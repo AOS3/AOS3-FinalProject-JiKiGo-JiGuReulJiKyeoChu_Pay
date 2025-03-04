@@ -116,6 +116,16 @@ class PayAppRepo @Inject constructor(
                 )
             }
         }
+        // 포인트 부족 시 오류 처리
+        else if (updatePoint < 0) {
+            Log.d("PayAppRepo","updatePoint: $updatePoint")
+            updateData = mapOf(
+                "userQrUse" to false,
+                "paymentPrice" to pay.payPrice,
+                "userQrError" to "포인트가 부족합니다.",
+                "userPoint" to user.userPoint,
+            )
+        }
         // 🔵 현장 결제 QR 코드 처리
         else if (user.payName == "") {
             // 정상적인 현장 결제
@@ -129,16 +139,6 @@ class PayAppRepo @Inject constructor(
                 "userPoint" to updatePoint,
             )
         }
-        // 포인트 부족 시 오류 처리
-        else if (updatePoint < 0) {
-            updateData = mapOf(
-                "userQrUse" to false,
-                "paymentPrice" to pay.payPrice,
-                "userQrError" to "포인트가 부족합니다.",
-                "userPoint" to user.userPoint,
-            )
-        }
-
         // 최종적으로 updateData가 초기화되지 않았다면 기본 오류 메시지 처리
         if (updateData.isEmpty()) {
             updateData = mapOf(
